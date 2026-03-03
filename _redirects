@@ -1,0 +1,3 @@
+# Legacy URL redirects (add as needed)
+/our-services/*  /services/:splat  301
+/blog/*          /resources/blog/:splat  301

@@ -1,0 +1,149 @@
+/* =============================================
+   DESIGN TOKENS — Digital Procurement Now
+   ============================================= */
+
+:root {
+  /* ----- COLORS ----- */
+
+  /* Primary: Deep Navy (from logo) */
+  --color-primary-900: #070520;
+  --color-primary-800: #0F0A3C;
+  --color-primary-700: #141055;
+  --color-primary-600: #1A1670;
+  --color-primary-500: #221E8C;
+  --color-primary-400: #3530A8;
+  --color-primary-300: #5753C4;
+  --color-primary-200: #8D8ADB;
+  --color-primary-100: #C6C5ED;
+  --color-primary-50:  #EAEAF8;
+
+  /* Accent: Electric Cyan (from logo) */
+  --color-accent-700: #0080AA;
+  --color-accent-600: #009FD4;
+  --color-accent-500: #00C2FF;
+  --color-accent-400: #33D1FF;
+  --color-accent-300: #66DDFF;
+  --color-accent-200: #99E8FF;
+  --color-accent-100: #CCF3FF;
+  --color-accent-50:  #E6F9FF;
+
+  /* Signal: Warm Amber (CTA contrast) */
+  --color-signal-600: #D97706;
+  --color-signal-500: #F59E0B;
+  --color-signal-400: #FBBF24;
+  --color-signal-300: #FCD34D;
+  --color-signal-200: #FDE68A;
+  --color-signal-100: #FEF3C7;
+
+  /* Neutrals */
+  --color-neutral-950: #0A0A0F;
+  --color-neutral-900: #1A1A2E;
+  --color-neutral-800: #2D2D44;
+  --color-neutral-700: #404060;
+  --color-neutral-600: #5C5C7A;
+  --color-neutral-500: #7A7A96;
+  --color-neutral-400: #9E9EB5;
+  --color-neutral-300: #C2C2D4;
+  --color-neutral-200: #E0E0EA;
+  --color-neutral-100: #F0F0F5;
+  --color-neutral-50:  #F8F8FB;
+  --color-white:       #FFFFFF;
+
+  /* Semantic */
+  --color-success: #16A34A;
+  --color-error:   #DC2626;
+
+  /* Surfaces */
+  --surface-primary:   var(--color-white);
+  --surface-secondary: var(--color-neutral-50);
+  --surface-dark:      var(--color-primary-800);
+  --surface-darker:    var(--color-primary-900);
+
+  /* Text */
+  --text-primary:    var(--color-neutral-900);
+  --text-secondary:  var(--color-neutral-600);
+  --text-tertiary:   var(--color-neutral-400);
+  --text-inverse:    var(--color-white);
+  --text-link:       var(--color-accent-500);
+  --text-link-hover: var(--color-accent-400);
+
+  /* ----- TYPOGRAPHY ----- */
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --text-xs:   clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-sm:   clamp(0.8125rem, 0.775rem + 0.19vw, 0.875rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.19vw, 1rem);
+  --text-lg:   clamp(1.0625rem, 1rem + 0.31vw, 1.125rem);
+  --text-xl:   clamp(1.1875rem, 1.1rem + 0.44vw, 1.3125rem);
+  --text-2xl:  clamp(1.4375rem, 1.3rem + 0.69vw, 1.625rem);
+  --text-3xl:  clamp(1.75rem, 1.5rem + 1.25vw, 2.125rem);
+  --text-4xl:  clamp(2.125rem, 1.75rem + 1.88vw, 2.75rem);
+  --text-5xl:  clamp(2.625rem, 2rem + 3.13vw, 3.75rem);
+
+  --leading-tight:   1.15;
+  --leading-snug:    1.3;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.75;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extrabold:800;
+
+  --tracking-tight:  -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.05em;
+  --tracking-widest: 0.1em;
+
+  /* ----- SPACING (8px grid) ----- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ----- LAYOUT ----- */
+  --container-xl:  1200px;
+  --container-lg:  1024px;
+  --container-md:  768px;
+  --container-sm:  640px;
+  --container-pad: var(--space-6);
+
+  /* ----- BORDERS & RADIUS ----- */
+  --radius-sm:   0.25rem;
+  --radius-md:   0.5rem;
+  --radius-lg:   0.75rem;
+  --radius-xl:   1rem;
+  --radius-2xl:  1.5rem;
+  --radius-full: 9999px;
+  --border-color: var(--color-neutral-200);
+
+  /* ----- SHADOWS ----- */
+  --shadow-sm:   0 1px 2px rgba(10,10,15,0.05);
+  --shadow-md:   0 4px 6px -1px rgba(10,10,15,0.07), 0 2px 4px -2px rgba(10,10,15,0.05);
+  --shadow-lg:   0 10px 15px -3px rgba(10,10,15,0.08), 0 4px 6px -4px rgba(10,10,15,0.05);
+  --shadow-xl:   0 20px 25px -5px rgba(10,10,15,0.1), 0 8px 10px -6px rgba(10,10,15,0.06);
+  --shadow-card: 0 1px 3px rgba(10,10,15,0.06), 0 8px 24px rgba(10,10,15,0.06);
+
+  /* ----- TRANSITIONS ----- */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ----- Z-INDEX ----- */
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-nav:      300;
+  --z-overlay:  400;
+  --z-modal:    500;
+}
