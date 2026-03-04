@@ -347,17 +347,23 @@
     transform: rotate(180deg);
   }
 
-  .nav__dropdown {
+  .nav__dropdown,
+  .nav__item--dropdown:hover .nav__dropdown,
+  .nav__item--dropdown:focus-within .nav__dropdown {
     position: static;
     opacity: 1;
     visibility: visible;
     transform: none;
     box-shadow: none;
+    margin: 0;
     padding: 0 0 var(--space-2) var(--space-4);
     min-width: auto;
     background: transparent;
     border-radius: 0;
     display: none;
+    list-style: none;
+    left: auto;
+    top: auto;
   }
 
   .nav__item--dropdown.open .nav__dropdown {
@@ -369,9 +375,11 @@
   }
 
   .nav__dropdown a {
+    display: block;
     padding: var(--space-3) var(--space-4);
     font-size: var(--text-sm);
     color: var(--text-secondary);
+    text-decoration: none;
     border-radius: var(--radius-md);
   }
 
